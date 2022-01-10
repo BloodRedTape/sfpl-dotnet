@@ -9,7 +9,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>SFPL.Net</PackageId>
-        <PackageVersion>1.1.7</PackageVersion>
+        <PackageVersion>1.0.0</PackageVersion>
         <Authors>BloodRedTape</Authors>
     </PropertyGroup>
 

@@ -10,3 +10,5 @@ sfpl-dotnet/*.user
 tests/bin
 tests/obj
 tests/*.user
+
+global.json
