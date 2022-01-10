@@ -19,5 +19,7 @@ class Program
 
         if(!PlotBuilder.Build(source, "test.jpg", new OutputParameters(1280, 720, "Test")))
             Console.WriteLine("Error");
+        else
+            Console.WriteLine("Done");
     }
 }

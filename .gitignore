@@ -5,6 +5,8 @@
 
 sfpl-dotnet/bin
 sfpl-dotnet/obj
+sfpl-dotnet/*.user
 
 tests/bin
 tests/obj
+tests/*.user

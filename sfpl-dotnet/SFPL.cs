@@ -66,7 +66,7 @@ namespace SFPL
             return Build(new []{source}, outFilePath, parameters);
         }
 
-        [DllImport(@"W:\Dev\sfpl-dll\cmake-build-debug\sfpl_dll.dll", CallingConvention = CallingConvention.StdCall)]
+        [DllImport("libs/sfpl", CallingConvention = CallingConvention.StdCall)]
         private static extern unsafe bool PlotBuilder_BuildImplNative(
             double*[] xs,
             double*[] ys, 

@@ -2,11 +2,26 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <RootNamespace>sfpl_dotnet</RootNamespace>
+        <RootNamespace>SFPL</RootNamespace>
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>Simple and Fast Plotting Library</Title>
         <Authors>BloodRedTape</Authors>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/BloodRedTape/sfpl/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/BloodRedTape/sfpl-dotnet</RepositoryUrl>
+        <Description>Nice plots with output to jpg, png and tga</Description>
+        <PackageProjectUrl>https://github.com/BloodRedTape/sfpl-dotnet</PackageProjectUrl>
+        <PackageId>SFPL.Net</PackageId>
+        <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="libs\sfpl_dll.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="libs\sfpl.dll">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
 
 </Project>
