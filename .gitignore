@@ -1,0 +1,10 @@
+.vs
+.vscode
+.idea
+.cache
+
+sfpl-dotnet/bin
+sfpl-dotnet/obj
+
+tests/bin
+tests/obj

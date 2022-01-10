@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>sfpl_dotnet</RootNamespace>
+        <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>Simple and Fast Plotting Library</Title>
+        <Authors>BloodRedTape</Authors>
+    </PropertyGroup>
+
+</Project>
