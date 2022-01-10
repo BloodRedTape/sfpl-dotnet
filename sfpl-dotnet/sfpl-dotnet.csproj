@@ -11,6 +11,11 @@
         <PackageId>SFPL.Net</PackageId>
         <PackageVersion>1.0.0</PackageVersion>
         <Authors>BloodRedTape</Authors>
+        <Title>Simple Fast Plotting Library</Title>
+        <Description>Simple plotting library with image output. JPG, TGA and PNG formats are supported.</Description>
+        <PackageProjectUrl>https://github.com/BloodRedTape/sfpl</PackageProjectUrl>
+        <PackageLicenseUrl>https://raw.githubusercontent.com/BloodRedTape/sfpl/master/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/BloodRedTape/sfpl-dotnet</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
