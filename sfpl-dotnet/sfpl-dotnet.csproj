@@ -9,7 +9,7 @@
         <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageId>SFPL.Net</PackageId>
-        <PackageVersion>1.0.0</PackageVersion>
+        <PackageVersion>1.0.2</PackageVersion>
         <Authors>BloodRedTape</Authors>
         <Title>Simple Fast Plotting Library</Title>
         <Description>Simple plotting library with image output. JPG, TGA and PNG formats are supported.</Description>
