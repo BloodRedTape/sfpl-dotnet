@@ -17,8 +17,6 @@ class Program
             source.Y[i] = i * i;
         }
 
-        var res = PlotBuilder.Build(source, "test.jpg", new OutputParameters(1280, 720, "Test"));
-
-        Console.WriteLine(res ? "Done" : "Error");
+        PlotBuilder.Build(source, "test.jpg", new OutputParameters(1280, 720, "Test"));
     }
 }
