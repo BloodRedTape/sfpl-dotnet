@@ -49,11 +49,14 @@ namespace SFPL
                 xs[i] = (double*)xHandle.AddrOfPinnedObject();
                 ys[i] = (double*)yHandle.AddrOfPinnedObject();
                 sizes[i] = Math.Min(sources[i].X.Length, sources[i].Y.Length);
-                names[i] = sources[i].Name;
+                
+                names[i] = sources[i].Name ?? string.Empty;
             }
 
-            bool result = PlotBuilder_BuildImplNative(xs, ys, sizes, names, sources.Length, outFilePath, 
-                parameters.ImageWidth, parameters.ImageHeight, parameters.PlotTitle, parameters.XAxisName, parameters.YAxisName);
+            bool result = PlotBuilder_BuildImplNative(xs, ys, sizes, names, sources.Length, outFilePath ?? "SFPLResult.jpg", 
+                parameters.ImageWidth, parameters.ImageHeight, 
+                parameters.PlotTitle ?? string.Empty, 
+                parameters.XAxisName ?? string.Empty, parameters.YAxisName ?? string.Empty);
 
             foreach (var handle in dataHandles)
                 handle.Free();

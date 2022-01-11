@@ -1,4 +1,5 @@
-﻿using SFPL;
+﻿using System;
+using SFPL;
 
 class Program
 {
@@ -9,7 +10,6 @@ class Program
         DataSource source = new DataSource();
         source.X = new double[size];
         source.Y = new double[size];
-        source.Name = "Test";
 
         for (int i = 0; i < size; i++)
         {
@@ -17,6 +17,8 @@ class Program
             source.Y[i] = i * i;
         }
 
-        PlotBuilder.Build(source, "test.jpg", new OutputParameters(1280, 720, "Test"));
+        var res = PlotBuilder.Build(source, "test.jpg", new OutputParameters(1280, 720, "Test"));
+
+        Console.WriteLine(res ? "Done" : "Error");
     }
 }
