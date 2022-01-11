@@ -14,7 +14,7 @@ class Program
     {
         const int size = 10;
         
-        DataSource source;
+        DataSource source = new DataSource();
         source.X = new double[size];
         source.Y = new double[size];
 
@@ -43,7 +43,7 @@ Expected result:
 ### Each trace can be provided with a name
 
 ```c#
-    DataSource source; 
+    DataSource source = new DataSource(); 
     //... code to fill source structure
     source.Name = "Source Name";
 
@@ -104,17 +104,16 @@ class Program
             sw.Reset();
         }
 
-        OutputParameters parameters;
+        OutputParameters parameters = new OutputParameters();
         parameters.ImageWidth = 1280;
         parameters.ImageHeight = 720;
         parameters.PlotTitle = "Heavy Operation Test";
         parameters.XAxisName = "Heavy operation size";
         parameters.YAxisName = "Time [ns]";
 
-        DataSource source;
+        DataSource source = new DataSource();
         source.X = x;
         source.Y = y;
-        source.Name = "";
 
         PlotBuilder.Build(source, "heavy_test.jpg",  parameters);
     }

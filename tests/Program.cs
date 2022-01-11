@@ -6,7 +6,7 @@ class Program
     {
         const int size = 10;
         
-        DataSource source;
+        DataSource source = new DataSource();
         source.X = new double[size];
         source.Y = new double[size];
         source.Name = "Test";
