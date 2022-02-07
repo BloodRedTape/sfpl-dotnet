@@ -52,7 +52,7 @@ class Program
         sourse.X = new double[size];
         sourse.Y = new double[size];
 
-        float x = min;
+        double x = min;
         for (int i = 0; i < size; i++) 
         {
             sourse.X[i] = x;
