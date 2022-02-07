@@ -32,6 +32,40 @@ class Program
 Expected result:
 ![](https://github.com/BloodRedTape/sfpl/blob/master/examples/parabola.jpg?raw=true)
 
+### Example of Sine function plot
+
+```c#
+using SFPL;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        
+        const double min = -4;
+        const double max = 4;
+        const double step = 0.1;
+
+        const int size = (int)((max - min) / step);
+
+        DataSource sourse = new DataSource();
+        sourse.X = new double[size];
+        sourse.Y = new double[size];
+
+        float x = min;
+        for (int i = 0; i < size; i++) 
+        {
+            sourse.X[i] = x;
+            sourse.Y[i] = Math.Sin(x);
+
+            x += step;
+        }
+        PlotBuilder.Build(sourse, "sin.jpg", new OutputParameters(1280, 720));
+
+    }
+}
+```
+
 ### Array of DataSource can be passed in order to plot multiple data sets
 ```c#
 
