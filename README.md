@@ -1,7 +1,7 @@
 # SFPL.Net - Simple and Fast Plotting Library port for dotnet
 ### Png, jpg and tga output image formats are supported
 ***
-## Usage
+## Warrning: Use on x64 target c# projects, Any CPU and x86 are not supported yet!
 ## Examples
 
 ### Minimum amount of code to create a simple plot:
